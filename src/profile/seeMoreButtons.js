@@ -30,6 +30,8 @@ const clickAll = async(page) => {
     for(let j = 0; j < elems.length; j++){
       const elem = elems[j]
       if (elem) {
+        await elem.evaluate(el => el.scrollIntoView({ block: "center" }))
+          .catch((e) => logger.warn(`couldn't scroll to ${button.selector}`))
         await elem.click()
           .catch((e) => logger.warn(`couldn't click on ${button.selector}, it's probably invisible`))
       }

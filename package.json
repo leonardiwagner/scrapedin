@@ -24,7 +24,7 @@
   "author": "Wagner Leonardi <leonardiwagner@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "puppeteer": "1.13.0",
+    "puppeteer": "1.20.0",
     "winston": "3.1.0"
   },
   "devDependencies": {
